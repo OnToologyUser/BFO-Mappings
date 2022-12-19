@@ -1,0 +1,54 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "prov:End" "prov:EmptyDictionary" "prov:Contributor" "prov:Bundle" "prov:Association" "prov:Dictionary" "prov:Activity" "prov:EmptyCollection" "prov:Organization" "prov:Creator" "prov:RightsAssignment" "prov:Derivation" "prov:AgentInfluence" "prov:Revision" "prov:Start" "prov:Person" "prov:Accept" "prov:Submit" "prov:Insertion" "prov:Replace" "prov:Agent" "prov:Communication" "prov:ServiceDescription" "prov:Publish" "prov:Generation" "prov:Create" "prov:PrimarySource" "prov:Usage" "prov:Role" "prov:Plan" "prov:Quotation" "prov:DirectQueryService" "prov:Contribute" "prov:Invalidation" "prov:Delegation" "prov:InstantaneousEvent" "prov:Attribution" "prov:RightsHolder" "prov:Removal" "owl:Thing" "prov:Influence" "prov:SoftwareAgent" "prov:Copyright" "prov:EntityInfluence" "prov:Collection" "prov:Publisher" "prov:Entity" "prov:Modify" "prov:ActivityInfluence" ; /*classes style*/
+	"prov:Plan" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"prov:EmptyDictionary" -> "prov:Dictionary" [ label = "rdfs:subClassOf" ];
+	"prov:EmptyDictionary" -> "prov:EmptyCollection" [ label = "rdfs:subClassOf" ];
+	"prov:Invalidation" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Invalidation" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:Quotation" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"prov:Communication" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Replace" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"prov:RightsHolder" -> "prov:Role" [ label = "rdfs:subClassOf" ];
+	"prov:ActivityInfluence" -> "prov:Influence" [ label = "rdfs:subClassOf" ];
+	"prov:Modify" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"prov:SoftwareAgent" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"prov:SoftwareAgent" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"prov:Contributor" -> "prov:Role" [ label = "rdfs:subClassOf" ];
+	"prov:Submit" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"prov:Creator" -> "prov:Contributor" [ label = "rdfs:subClassOf" ];
+	"prov:PrimarySource" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"prov:Attribution" -> "prov:AgentInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:RightsAssignment" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"prov:Delegation" -> "prov:AgentInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:ServiceDescription" -> "prov:SoftwareAgent" [ label = "rdfs:subClassOf" ];
+	"prov:Derivation" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Association" -> "prov:AgentInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:End" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:End" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:Contribute" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"prov:Usage" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:Usage" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Collection" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"prov:Publish" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"prov:Bundle" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"prov:Start" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Start" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:EmptyCollection" -> "prov:Collection" [ label = "rdfs:subClassOf" ];
+	"prov:Revision" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"prov:Organization" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"prov:DirectQueryService" -> "prov:SoftwareAgent" [ label = "rdfs:subClassOf" ];
+	"prov:EntityInfluence" -> "prov:Influence" [ label = "rdfs:subClassOf" ];
+	"prov:Insertion" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"prov:Person" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"prov:Removal" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"prov:AgentInfluence" -> "prov:Influence" [ label = "rdfs:subClassOf" ];
+	"prov:Copyright" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"prov:Generation" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Generation" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:Accept" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"prov:Create" -> "prov:Contribute" [ label = "rdfs:subClassOf" ];
+	"prov:Publisher" -> "prov:Role" [ label = "rdfs:subClassOf" ];
+
+}
